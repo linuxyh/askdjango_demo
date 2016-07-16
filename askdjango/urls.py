@@ -24,7 +24,8 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls')),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^$', TemplateView.as_view(template_name='root.html'), name='root'),
+    url(r'^$', views.index, name='index'),
+    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
