@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'accounts.providers.kakao',
     'accounts.providers.naver',
+    'polls',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -149,4 +150,3 @@ MEDIA_ROOT = join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'root'
 LOGOUT_REDIRECT_URL = 'root'
-
